@@ -1,88 +1,67 @@
 /*
- * zhihu_adkill_v3.js — 删除原型 (removal prototype)
- * 目标端点:
- *   - api.zhihu.com/topstory/recommend  -> 删 is_advertiser===true 的卡片
- *   - page-modular.zhihu.com/templates  -> 删带 za_ad_info/ad/ad_verb 的广告模块
- * 行为: 真删除 + 报告删前/删后长度与被删元素判定字段。
+ * zhihu_struct_probe.js — 只读结构探针 v4
+ * 把响应的"第一层字段 + 每个顶层数组的前几个元素的字段签名"打出来，
+ * 用于确认广告到底藏在哪个数组、用哪个字段判定。
+ * 不修改 body。
  */
 const body = $response.body;
 const url = $request.url || "";
 
-function findArray(obj) {
-  // 返回最可能的"列表"数组: 名为 data / templates / items / list 的数组, 否则第一个数组
-  if (Array.isArray(obj)) return obj;
-  if (obj && typeof obj === "object") {
-    for (const k of ["data", "templates", "items", "list", "cards"]) {
-      if (Array.isArray(obj[k])) return obj[k];
-    }
-    for (const k of Object.keys(obj)) {
-      if (Array.isArray(obj[k]) && obj[k].length > 0) return obj[k];
-    }
-  }
-  return null;
-}
-
-function isAdItem(item) {
-  if (!item || typeof item !== "object") return false;
-  if (item.is_advertiser === true) return true;
-  if (item.ad === 1 || item.ad === true) return true;
-  if (item.za_ad_info || item.za_ad_info_json || item.ad_verb) return true;
-  if (typeof item.card_type === "string" && /ad|advert|commercial|promo/i.test(item.card_type)) return true;
-  return false;
-}
-
-function elemTag(item) {
-  // 用于日志核对的判定字段
-  return JSON.stringify({
-    card_type: item.card_type,
-    type: item.type,
-    id: item.id,
-    is_advertiser: item.is_advertiser,
-    ad: item.ad,
-    title: (item.title || "").slice(0, 24)
-  });
+function fieldSig(obj) {
+  // 返回对象顶层字段名集合
+  if (Array.isArray(obj)) return "Array[" + obj.length + "]";
+  if (obj && typeof obj === "object") return "{" + Object.keys(obj).slice(0, 30).join(",") + "}";
+  return typeof obj;
 }
 
 let parsed = null;
 try { parsed = JSON.parse(body); } catch (e) {
-  console.log("ZPARSEERR|" + url);
+  console.log("SPARSEERR|" + url);
   $done({ body });
   return;
 }
 
-const isTop = /topstory\/recommend/.test(url);
-const isMod = /page-modular\.zhihu\.com\/templates/.test(url);
+const tag = /topstory\/recommend/.test(url) ? "topstory"
+          : /page-modular\.zhihu\.com\/templates/.test(url) ? "pagemod"
+          : "other";
 
-let removed = 0;
-let tags = [];
+console.log("SP_STRUCT|" + tag + "|top=" + fieldSig(parsed));
 
-if (isTop || isMod) {
-  const arr = findArray(parsed);
-  if (arr) {
-    const before = arr.length;
-    const keep = [];
-    for (const it of arr) {
-      if (isAdItem(it)) { removed++; tags.push(elemTag(it)); }
-      else keep.push(it);
-    }
-    // 写回原数组位置
-    if (Array.isArray(parsed)) {
-      parsed.length = 0; parsed.push(...keep);
-    } else {
-      for (const k of ["data", "templates", "items", "list", "cards"]) {
-        if (Array.isArray(parsed[k])) { parsed[k] = keep; break; }
+// 列出顶层所有数组字段及其元素签名
+function walk(prefix, obj, depth) {
+  if (depth > 3) return;
+  if (Array.isArray(obj)) {
+    console.log("SP_ARR|" + tag + "|" + prefix + "|len=" + obj.length);
+    // 打印前 3 个元素的字段签名 + 关键判定字段值
+    for (let i = 0; i < Math.min(3, obj.length); i++) {
+      const el = obj[i];
+      if (el && typeof el === "object") {
+        const keys = Object.keys(el).slice(0, 40).join(",");
+        const idp = JSON.stringify({
+          type: el.type, card_type: el.card_type,
+          is_advertiser: el.is_advertiser, ad: el.ad,
+          card_id: el.card_id, id: el.id,
+          target: el.target_type, style: el.style_type
+        });
+        console.log("SP_EL|" + tag + "|" + prefix + "[" + i + "]|keys=" + keys);
+        console.log("SP_KW|" + tag + "|" + prefix + "[" + i + "]|" + idp);
       }
-      // 兜底: 第一个数组
-      for (const k of Object.keys(parsed)) {
-        if (Array.isArray(parsed[k]) && parsed[k].length === before) { parsed[k] = keep; break; }
+    }
+    // 递归第一层子对象里的数组
+    for (let i = 0; i < Math.min(3, obj.length); i++) {
+      const el = obj[i];
+      if (el && typeof el === "object") {
+        for (const k of Object.keys(el)) {
+          if (Array.isArray(el[k])) walk(prefix + "[" + i + "]." + k, el[k], depth + 1);
+        }
       }
     }
-    console.log("ZKILL|" + (isTop ? "topstory" : "page-modular") +
-      "|before=" + before + "|after=" + keep.length + "|removed=" + removed);
-    if (tags.length) console.log("ZTAGS|" + tags.slice(0, 5).join(" || "));
-  } else {
-    console.log("ZNOARR|" + (isTop ? "topstory" : "page-modular"));
+  } else if (obj && typeof obj === "object") {
+    for (const k of Object.keys(obj)) {
+      if (Array.isArray(obj[k])) walk(prefix + "." + k, obj[k], depth + 1);
+    }
   }
 }
+walk("root", parsed, 0);
 
-$done({ body: JSON.stringify(parsed) });
+$done({ body });
