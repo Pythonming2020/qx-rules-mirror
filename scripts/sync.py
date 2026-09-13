@@ -83,6 +83,14 @@ def target_path(url):
     return f"other/{hashlib.md5(url.encode()).hexdigest()[:8]}_{os.path.basename(url)}"
 
 
+def read_dead():
+    p = os.path.join(BASE, ".dead-sources")
+    if not os.path.exists(p):
+        return set()
+    return {l.strip() for l in open(p, encoding="utf-8")
+            if l.strip() and not l.startswith("#")}
+
+
 def read_list(path):
     if not os.path.exists(path):
         return []
@@ -96,9 +104,12 @@ def is_module(text):
 
 
 def main():
-    urls = read_list(URLS_FILE)
-    urls_int = read_list(URLS_INTERNAL)
-    print(f"listes: {len(urls)} premier niveau + {len(urls_int)} internes")
+    dead = read_dead()
+    urls = [u for u in read_list(URLS_FILE) if u not in dead]
+    urls_int = [u for u in read_list(URLS_INTERNAL) if u not in dead]
+    skipped = (len(read_list(URLS_FILE)) - len(urls)) + (len(read_list(URLS_INTERNAL)) - len(urls_int))
+    print(f"listes: {len(urls)} premier niveau + {len(urls_int)} internes"
+          + (f" ({skipped} sources retirées ignorées)" if skipped else ""))
 
     manifest, mapping = {}, {}
     ok, fail = 0, []

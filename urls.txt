@@ -25,8 +25,8 @@ https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/vivavideo.js
 https://raw.githubusercontent.com/NobyDa/Script/master/TestFlight/TestFlightAccount.js
 https://raw.githubusercontent.com/Orz-3/QuantumultX/master/Netflix_ratings.conf
 https://raw.githubusercontent.com/QXPublic/MyUtilize/main/Rewrite/Quantumlutx/Reddit_remove_ads.js
-https://raw.githubusercontent.com/Yu9191/Rewrite/main/FTzhongwenwang.js
-https://raw.githubusercontent.com/Yu9191/wloc/refs/heads/main/modules/wloc.conf
+# RETIRÉ (upstream supprimé 2026-09, compte Yu9191 effacé) — version auto-hébergée: _custom/ftzhongwenwang.js
+# RETIRÉ (upstream supprimé 2026-09, compte Yu9191 effacé) — version auto-hébergée: _custom/ftzhongwenwang.js
 https://raw.githubusercontent.com/app2smile/rules/master/module/spotify.conf
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Hijacking/Hijacking.list
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Lan/Lan.list

@@ -1,9 +1,16 @@
-# qx-rules-mirror — scripts tiers référencés depuis l’intérieur des modules
-# (généré par scripts/gen_internal_urls.py — ne pas éditer à la main)
-# sync.py télécharge ces URLs puis réécrit la référence dans le module
-# pour qu’elle pointe vers ce dépôt. Idempotent.
+# qx-rules-mirror — registre des scripts tiers suivis (REGISTRE: ne rétrécit pas)
+# (généré par scripts/gen_internal_urls.py — union avec la version précédente)
+# sync.py les télécharge puis réécrit la référence interne vers ce dépôt.
 
-# --- chxm1023 (180) ---
+# --- chxm1023 (2) ---
+https://raw.githubusercontent.com/chxm1023/script/main/Rewrite/embycrack.js
+https://raw.githubusercontent.com/chxm1023/script/main/Rewrite/xzjhz.js
+
+# --- other:service.2ti.st (1) ---
+
+# --- chxm102 (1) ---
+https://raw.githubusercontent.com/chxm102
+
 https://raw.githubusercontent.com/chxm1023/Rewrite/main/13geapp.js
 https://raw.githubusercontent.com/chxm1023/Rewrite/main/360xj.js
 https://raw.githubusercontent.com/chxm1023/Rewrite/main/40sishi.js
@@ -184,8 +191,6 @@ https://raw.githubusercontent.com/chxm1023/Rewrite/main/znqdq.js
 https://raw.githubusercontent.com/chxm1023/Rewrite/main/zpqlds.js
 https://raw.githubusercontent.com/chxm1023/Rewrite/main/zyqmds.js
 https://raw.githubusercontent.com/chxm1023/Rewrite/main/zztx.js
-
-# --- fmz200 (21) ---
 https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/FamilyMart.js
 https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/T3.js
 https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/alittle-tea.js
@@ -207,8 +212,6 @@ https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/xiaodaka.js
 https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/xiaotucc.js
 https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/yx.js
 https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/zhangshanggongjiao.js
-
-# --- NobyDa (14) ---
 https://raw.githubusercontent.com/NobyDa/Script/master/Loon/Loon_TF_Account.plugin
 https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/Wechat.js
 https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/Zymh.js
@@ -223,54 +226,25 @@ https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/luqi.js
 https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/vivavideo.js
 https://raw.githubusercontent.com/NobyDa/Script/master/Surge/Module/TestFlightAccount.sgmodule
 https://raw.githubusercontent.com/NobyDa/Script/master/TestFlight/TestFlightAccount.js
-
-# --- other:github.com (6) ---
 https://github.com/DualSubs/Universal/releases/latest/download/Composite.Subtitles.response.bundle.js
 https://github.com/DualSubs/Universal/releases/latest/download/Translate.response.bundle.js
 https://github.com/DualSubs/YouTube/releases/download/v1.5.11/request.bundle.js
 https://github.com/DualSubs/YouTube/releases/download/v1.5.11/response.bundle.js
 https://github.com/NSRingo/WeatherKit/releases/download/v3.3.1/request.bundle.js
 https://github.com/NSRingo/WeatherKit/releases/download/v3.3.1/response.bundle.js
-
-# --- ddgksf2013 (4) ---
 https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/douban.js
 https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/weibo_json.js
 https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/weibo_search_info.json
 https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/weibo_search_topic.json
-
-# --- yichahucha (3) ---
 https://raw.githubusercontent.com/yichahucha/surge/master/nf_rating.js
 https://raw.githubusercontent.com/yichahucha/surge/master/wb_ad.js
 https://raw.githubusercontent.com/yichahucha/surge/master/wb_launch.js
-
-# --- Yu9191 (3) ---
-https://raw.githubusercontent.com/Yu9191/Rewrite/main/FTzhongwenwang.js
-https://raw.githubusercontent.com/Yu9191/wloc/refs/heads/main/dist/wloc-settings.js
-https://raw.githubusercontent.com/Yu9191/wloc/refs/heads/main/dist/wloc.js
-
-# --- app2smile (3) ---
 https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-json.js
 https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-proto.js
 https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-qx-header.js
-
-# --- other:service.2ti.st (1) ---
-https://service.2ti.st/QuanX/Script/jd_tb_price/main.js
-
-# --- chavyleung (1) ---
 https://raw.githubusercontent.com/chavyleung/scripts/master/box/chavy.boxjs.js
-
-# --- wf021325 (1) ---
 https://raw.githubusercontent.com/wf021325/qx/master/js/lxy.js
-
-# --- Maasea (1) ---
 https://raw.githubusercontent.com/Maasea/sgmodule/refs/heads/master/Script/Youtube/youtube.response.js
-
-# --- zZPiglet (1) ---
 https://raw.githubusercontent.com/zZPiglet/Task/master/asset/UnblockURLinWeChat.js
-
-# --- 89996462 (1) ---
 https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/https.js
-
-# --- QXPublic (1) ---
 https://raw.githubusercontent.com/QXPublic/MyUtilize/main/Rewrite/Quantumlutx/Reddit_remove_ads.js
-

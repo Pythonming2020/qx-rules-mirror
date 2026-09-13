@@ -61,8 +61,28 @@ def main():
         lines.append(f'# --- {a} ({len(group)}) ---')
         lines.extend(group)
         lines.append('')
+    # UNION avec la liste existante : urls-internal.txt est un REGISTRE des sources
+    # suivies — il ne doit jamais rétrécir (après réécriture, les références ne
+    # sont plus « externes » et une régénération nue les perdrait).
+    existing = []
+    if os.path.exists(f'{ROOT}/urls-internal.txt'):
+        existing = [l.strip() for l in open(f'{ROOT}/urls-internal.txt', encoding='utf-8')
+                    if l.strip() and not l.startswith('#')]
+    merged = list(dict.fromkeys(list(urls) + existing))
+    lines = ['# qx-rules-mirror — registre des scripts tiers suivis (REGISTRE: ne rétrécit pas)',
+             '# (généré par scripts/gen_internal_urls.py — union avec la version précédente)',
+             '# sync.py les télécharge puis réécrit la référence interne vers ce dépôt.',
+             '']
+    for a, _ in by_author.most_common():
+        group = sorted(u for u in urls if author_of(u) == a)
+        lines.append(f'# --- {a} ({len(group)}) ---')
+        lines.extend(group)
+        lines.append('')
+    for u in merged:
+        if u not in urls:
+            lines.append(u)
     open(f'{ROOT}/urls-internal.txt', 'w', encoding='utf-8').write('\n'.join(lines) + '\n')
-    print(f"\nécrit : urls-internal.txt ({len(urls)} URLs)")
+    print(f"\nécrit : urls-internal.txt ({len(merged)} URLs, registre)")
 
 
 if __name__ == '__main__':
