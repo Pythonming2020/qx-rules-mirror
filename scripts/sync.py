@@ -104,6 +104,27 @@ def is_module(text):
 
 
 def main():
+    # Verrou : deux synchronisations concurrentes se écrasent mutuellement
+    # (vécu : un run manuel + le cron en parallèle → les fichiers réécrits étaient
+    # réécrasés par les téléchargements de l'autre, donnant l'illusion d'un rollback).
+    lock_path = os.path.join(BASE, ".sync.lock")
+    if os.path.exists(lock_path):
+        try:
+            pid = int(open(lock_path).read().strip())
+            os.kill(pid, 0)                     # le processus vit-il encore ?
+            print(f"ERREUR: une synchronisation est déjà en cours (pid {pid}) — abandon")
+            sys.exit(1)
+        except (ValueError, ProcessLookupError, PermissionError):
+            pass                                # verrou périmé -> on le reprend
+    open(lock_path, "w").write(str(os.getpid()))
+    try:
+        _run()
+    finally:
+        if os.path.exists(lock_path):
+            os.remove(lock_path)
+
+
+def _run():
     dead = read_dead()
     urls = [u for u in read_list(URLS_FILE) if u not in dead]
     urls_int = [u for u in read_list(URLS_INTERNAL) if u not in dead]
