@@ -13,7 +13,7 @@
 **************************************
 
 [rewrite_local]
-^https?:\/\/(purchase-.*-api|user-kaji-api)\.(yiruikecorp|b612kaji|tianyancam)\.com\/v\d\/purchase\/subscription\/subscriber\/status url script-response-body https://raw.githubusercontent.com/Pythonming2020/qx-rules-mirror/main/mirror/chxm1023_Rewrite/4gexj.js
+^https?:\/\/(purchase-.*-api|user-kaji-api)\.(yiruikecorp|b612kaji|tianyancam)\.com\/v\d\/purchase\/subscription\/subscriber\/status url script-response-body https://raw.githubusercontent.com/chxm1023/Rewrite/main/4gexj.js
 
 [mitm]
 hostname = purchase-*-api.*.com, user-kaji-api.b612kaji.com

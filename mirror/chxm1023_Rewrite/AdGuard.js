@@ -10,7 +10,7 @@
 **************************************
 
 [rewrite_local]
-^https:\/\/mobile-api\.adguard\.org\/api\/.+\/ios_validate_receipt\/(.*?) url script-response-body https://raw.githubusercontent.com/Pythonming2020/qx-rules-mirror/main/mirror/chxm1023_Rewrite/AdGuard.js
+^https:\/\/mobile-api\.adguard\.org\/api\/.+\/ios_validate_receipt\/(.*?) url script-response-body https://raw.githubusercontent.com/chxm1023/Rewrite/main/AdGuard.js
 
 [mitm]
 hostname = mobile-api.adguard.org

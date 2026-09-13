@@ -10,7 +10,7 @@
 **************************************
 
 [rewrite_local]
-^https?:\/\/(api|docs)\.craft\.do\/(api\/)?(auth\/v\d\/profile|subscription\/(receipt|teams\/get-subscriptions)) url script-response-body https://raw.githubusercontent.com/Pythonming2020/qx-rules-mirror/main/mirror/chxm1023_Rewrite/Craft.js
+^https?:\/\/(api|docs)\.craft\.do\/(api\/)?(auth\/v\d\/profile|subscription\/(receipt|teams\/get-subscriptions)) url script-response-body https://raw.githubusercontent.com/chxm1023/Rewrite/main/Craft.js
 
 [mitm]
 hostname = api.craft.do

@@ -10,7 +10,7 @@
 **************************************
 
 [rewrite_local]
-^https:\/\/accounts\.agenda\.com\/users\/.*\/license url script-response-body https://raw.githubusercontent.com/Pythonming2020/qx-rules-mirror/main/mirror/chxm1023_Rewrite/Agenda.js
+^https:\/\/accounts\.agenda\.com\/users\/.*\/license url script-response-body https://raw.githubusercontent.com/chxm1023/Rewrite/main/Agenda.js
 
 [mitm]
 hostname = accounts.agenda.com

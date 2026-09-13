@@ -13,7 +13,7 @@
 
 [rewrite_local]
 
-^https?:\/\/www\.40sishi\.com url script-response-body https://raw.githubusercontent.com/Pythonming2020/qx-rules-mirror/main/mirror/chxm1023_Rewrite/40sishi.js
+^https?:\/\/www\.40sishi\.com url script-response-body https://raw.githubusercontent.com/chxm1023/Rewrite/main/40sishi.js
 
 [mitm]
 

@@ -10,7 +10,7 @@
 **************************************
 
 [rewrite_local]
-^https?:\/\/(appss|standard)\.(rhinox.*|linhongshi)\.com\/.+\/account\/getAccountInfo url script-response-body https://raw.githubusercontent.com/Pythonming2020/qx-rules-mirror/main/mirror/chxm1023_Rewrite/13geapp.js
+^https?:\/\/(appss|standard)\.(rhinox.*|linhongshi)\.com\/.+\/account\/getAccountInfo url script-response-body https://raw.githubusercontent.com/chxm1023/Rewrite/main/13geapp.js
 
 [mitm]
 hostname = *.rhinox*.com, appss.linhongshi.com

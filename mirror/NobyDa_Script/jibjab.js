@@ -5,7 +5,7 @@ JibJab 解锁高级功能
 QuantumultX:
 
 [rewrite_local]
-https:\/\/origin-prod-phoenix\.jibjab\.com\/v1\/user url script-response-body https://raw.githubusercontent.com/Pythonming2020/qx-rules-mirror/main/mirror/NobyDa_Script/jibjab.js
+https:\/\/origin-prod-phoenix\.jibjab\.com\/v1\/user url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/jibjab.js
 
 [mitm]
 hostname = origin-prod-phoenix.jibjab.com
