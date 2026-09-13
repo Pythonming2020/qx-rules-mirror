@@ -5,7 +5,7 @@ MIX 解锁特权 (需恢复购买)
 QuantumultX:
 
 [rewrite_local]
-https?:\/\/cdn-bm\.camera360\.com\/api\/mix\/recovery url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/MIX.js
+https?:\/\/cdn-bm\.camera360\.com\/api\/mix\/recovery url script-response-body https://raw.githubusercontent.com/Pythonming2020/qx-rules-mirror/main/mirror/NobyDa_Script/MIX.js
 
 [mitm]
 hostname = cdn-bm.camera360.com

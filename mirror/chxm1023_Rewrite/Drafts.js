@@ -9,7 +9,7 @@
 **************************************
 
 [rewrite_local]
-^https?:\/\/backend\.getdrafts\.com\/api\/v\d\/verification\/(account_status|verify_receipt) url script-response-body https://raw.githubusercontent.com/chxm1023/Rewrite/main/Drafts.js
+^https?:\/\/backend\.getdrafts\.com\/api\/v\d\/verification\/(account_status|verify_receipt) url script-response-body https://raw.githubusercontent.com/Pythonming2020/qx-rules-mirror/main/mirror/chxm1023_Rewrite/Drafts.js
 
 [mitm]
 hostname = backend.getdrafts.com

@@ -5,7 +5,7 @@
 hostname = gql.reddit.com, gql-fed.reddit.com
 # 过滤推广 关NSFW提示 感谢【xream】分享
 [rewrite_local]
-^https?:\/\/gql(-fed)?\.reddit\.com url script-response-body https://raw.githubusercontent.com/QXPublic/MyUtilize/main/Rewrite/Quantumlutx/Reddit_remove_ads.js
+^https?:\/\/gql(-fed)?\.reddit\.com url script-response-body https://raw.githubusercontent.com/Pythonming2020/qx-rules-mirror/main/mirror/QXPublic_MyUtilize/Reddit_remove_ads.js
 */
 let body;
 try {
