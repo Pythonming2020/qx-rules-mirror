@@ -1,6 +1,7 @@
 #!/bin/bash
 # Synchronisation quotidienne du miroir qx-rules-mirror : sources -> commit -> push
-# Succes : aucune sortie (silencieux) ; echec : message d'erreur (alerte cron)
+# + audit d'auto-portance (aucune dépendance externe ne doit subsister)
+# Succès : aucune sortie (silencieux) ; échec : message d'erreur (alerte cron)
 cd "$(dirname "$0")" || exit 1
 
 TOKEN=$(cat .push_token 2>/dev/null)
@@ -13,6 +14,14 @@ python3 scripts/sync.py > /tmp/qx_mirror_sync.log 2>&1
 if [ $? -ne 0 ]; then
   echo "ERREUR: sync.py a echoue"
   tail -5 /tmp/qx_mirror_sync.log
+  exit 1
+fi
+
+# Audit d'auto-portance : toute référence encore externe doit faire échouer le job.
+python3 scripts/audit.py > /tmp/qx_mirror_audit.log 2>&1
+if [ $? -ne 0 ]; then
+  echo "ERREUR: audit — dépendances externes détectées"
+  grep -E '仍指向第三方|^  [0-9]+' /tmp/qx_mirror_audit.log | head -8
   exit 1
 fi
 
@@ -29,4 +38,3 @@ if [ $? -ne 0 ]; then
   exit 1
 fi
 echo "Synchronisation terminee : mise a jour poussee"
-

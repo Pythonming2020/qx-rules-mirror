@@ -5,7 +5,7 @@
 QuantumultX:
 
 [rewrite_local]
-^https:\/\/api-use\.intsvs\.com\/api\/rest\/u\/vipVerifyReceipt url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/vivavideo.js
+^https:\/\/api-use\.intsvs\.com\/api\/rest\/u\/vipVerifyReceipt url script-response-body https://raw.githubusercontent.com/Pythonming2020/qx-rules-mirror/main/mirror/NobyDa_Script/vivavideo.js
 
 [mitm]
 hostname = api-use.intsvs.com

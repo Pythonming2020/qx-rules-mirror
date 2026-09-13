@@ -5,7 +5,7 @@
 QuantumultX:
 
 [rewrite_local]
-^https:\/\/apigate\.kaimanhua\.com\/(zymk-getuserinfo-api\/v1\/getuserinfo|zymk-userpurchased-api\/v1\/userpurchased\/paychapters)\/ url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/Zymh.js
+^https:\/\/apigate\.kaimanhua\.com\/(zymk-getuserinfo-api\/v1\/getuserinfo|zymk-userpurchased-api\/v1\/userpurchased\/paychapters)\/ url script-response-body https://raw.githubusercontent.com/Pythonming2020/qx-rules-mirror/main/mirror/NobyDa_Script/Zymh.js
 
 [mitm]
 hostname = apigate.kaimanhua.com

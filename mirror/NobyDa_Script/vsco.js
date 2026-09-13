@@ -3,7 +3,7 @@ Membership unlock for VSCO & 1Blocker & HTTPBot
 Please note that you may need to reinstall app for script to work.
 
 QuantumultX rewrite link:
-https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/vsco.js
+https://raw.githubusercontent.com/Pythonming2020/qx-rules-mirror/main/mirror/NobyDa_Script/vsco.js
 
 Please note that the above rewrite link requires open KOP-XIAO's resource parser
 
