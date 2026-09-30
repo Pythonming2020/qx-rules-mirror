@@ -16,12 +16,6 @@ https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/wnyd.js
 https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/xjsp.js
 https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/Js.conf
 https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/Rewrite_lhie1.conf
-https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/BaiduCloud.js
-https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/CamScanner.js
-https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/MIX.js
-https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/jibjab.js
-https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/luqi.js
-https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/vivavideo.js
 https://raw.githubusercontent.com/NobyDa/Script/master/TestFlight/TestFlightAccount.js
 https://raw.githubusercontent.com/Orz-3/QuantumultX/master/Netflix_ratings.conf
 https://raw.githubusercontent.com/QXPublic/MyUtilize/main/Rewrite/Quantumlutx/Reddit_remove_ads.js
@@ -49,3 +43,9 @@ https://raw.githubusercontent.com/yichahucha/surge/master/wb_ad.js
 https://raw.githubusercontent.com/yichahucha/surge/master/wb_launch.js
 https://raw.githubusercontent.com/zZPiglet/Task/master/UnblockURLinWeChat.conf
 https://yfamilys.com/rewrite/SpotifyPremium.conf
+https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/BaiduCloud.js
+https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/CamScanner.js
+https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/MIX.js
+https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/jibjab.js
+https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/luqi.js
+https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/vivavideo.js

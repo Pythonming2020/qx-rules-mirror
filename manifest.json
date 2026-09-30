@@ -17,12 +17,6 @@
   "https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/xjsp.js": "mirror/NobyDa_Script/xjsp.js",
   "https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/Js.conf": "mirror/NobyDa_Script/Js.conf",
   "https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/Rewrite_lhie1.conf": "mirror/NobyDa_Script/Rewrite_lhie1.conf",
-  "https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/BaiduCloud.js": "mirror/NobyDa_Script/BaiduCloud.js",
-  "https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/CamScanner.js": "mirror/NobyDa_Script/CamScanner.js",
-  "https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/MIX.js": "mirror/NobyDa_Script/MIX.js",
-  "https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/jibjab.js": "mirror/NobyDa_Script/jibjab.js",
-  "https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/luqi.js": "mirror/NobyDa_Script/luqi.js",
-  "https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/vivavideo.js": "mirror/NobyDa_Script/vivavideo.js",
   "https://raw.githubusercontent.com/NobyDa/Script/master/TestFlight/TestFlightAccount.js": "mirror/NobyDa_Script/TestFlightAccount.js",
   "https://raw.githubusercontent.com/Orz-3/QuantumultX/master/Netflix_ratings.conf": "mirror/Orz-3_QuantumultX/Netflix_ratings.conf",
   "https://raw.githubusercontent.com/QXPublic/MyUtilize/main/Rewrite/Quantumlutx/Reddit_remove_ads.js": "mirror/QXPublic_MyUtilize/Reddit_remove_ads.js",
@@ -47,5 +41,11 @@
   "https://raw.githubusercontent.com/yichahucha/surge/master/wb_ad.js": "mirror/yichahucha_surge/wb_ad.js",
   "https://raw.githubusercontent.com/yichahucha/surge/master/wb_launch.js": "mirror/yichahucha_surge/wb_launch.js",
   "https://raw.githubusercontent.com/zZPiglet/Task/master/UnblockURLinWeChat.conf": "mirror/zZPiglet_Task/UnblockURLinWeChat.conf",
-  "https://yfamilys.com/rewrite/SpotifyPremium.conf": "mirror/yfamilys_com/SpotifyPremium.conf"
+  "https://yfamilys.com/rewrite/SpotifyPremium.conf": "mirror/yfamilys_com/SpotifyPremium.conf",
+  "https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/BaiduCloud.js": "mirror/NobyDa_Script/BaiduCloud.js",
+  "https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/CamScanner.js": "mirror/NobyDa_Script/CamScanner.js",
+  "https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/MIX.js": "mirror/NobyDa_Script/MIX.js",
+  "https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/jibjab.js": "mirror/NobyDa_Script/jibjab.js",
+  "https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/luqi.js": "mirror/NobyDa_Script/luqi.js",
+  "https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/vivavideo.js": "mirror/NobyDa_Script/vivavideo.js"
 }
