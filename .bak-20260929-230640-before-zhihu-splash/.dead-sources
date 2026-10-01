@@ -1,0 +1,19 @@
+# qx-rules-mirror — sources amont RETIRÉES (ne plus télécharger)
+#
+# Le compte GitHub Yu9191 a été supprimé (2026-09) ; service.2ti.st est mort.
+# Les copies auto-hébergées vivent dans _custom/ et vendor/ — elles servent
+# toujours. On ne veut donc plus que sync.py échoue à cause de ces URLs.
+#
+# Format : une URL par ligne.
+
+https://raw.githubusercontent.com/Yu9191/Rewrite/main/FTzhongwenwang.js
+https://raw.githubusercontent.com/Yu9191/wloc/refs/heads/main/dist/wloc.js
+https://raw.githubusercontent.com/Yu9191/wloc/refs/heads/main/dist/wloc-settings.js
+https://raw.githubusercontent.com/Yu9191/wloc/refs/heads/main/modules/wloc.conf
+https://service.2ti.st/QuanX/Script/jd_tb_price/main.js
+
+# Références inertes (commentaires JS / faute de frappe de l'auteur) — jamais
+# téléchargeables, listées aussi dans .audit-ignore.
+https://raw.githubusercontent.com/chxm1023/script/main/Rewrite/embycrack.js
+https://raw.githubusercontent.com/chxm1023/script/main/Rewrite/xzjhz.js
+https://raw.githubusercontent.com/chxm102

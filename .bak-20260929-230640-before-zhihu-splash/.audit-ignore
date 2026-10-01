@@ -1,0 +1,20 @@
+# qx-rules-mirror — références externes connues et INERTES
+#
+# Ces URLs apparaissent dans un fichier mirroté mais ne sont jamais téléchargées
+# par Quantumult X : soit elles vivent dans un commentaire JS, soit la règle qui
+# les porte est désactivée, soit l'upstream lui-même est cassé (faute de l'auteur).
+# Elles ne comptent donc PAS comme dépendance externe dans scripts/audit.py.
+#
+# Format : une URL par ligne (le préfixe « # » commente).
+
+# auteur : chxm1023 — dépôt chxm1023/script supprimé en amont (404)
+# -> la règle de l'auteur pointait déjà dans le vide ; inerte
+https://raw.githubusercontent.com/chxm1023/script/main/Rewrite/embycrack.js
+https://raw.githubusercontent.com/chxm1023/script/main/Rewrite/xzjhz.js
+
+# auteur : inconnu — URL tronquée dans le brouillon de l'auteur (« chxm102 3 »)
+# -> ne peut pas être résolue ; inerte
+https://raw.githubusercontent.com/chxm102
+
+# auteur : service.2ti.st — service mort ; règle dans Js.conf, module DÉSACTIVÉ
+https://service.2ti.st/QuanX/Script/jd_tb_price/main.js
