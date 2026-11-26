@@ -17,6 +17,18 @@ if [ $? -ne 0 ]; then
   exit 1
 fi
 
+# Les modules mirroite peuvent REFERENCER des scripts tiers (URLs de directive).
+# sync.py ne les telecharge/reecrit que s'ils sont dans urls-internal.txt.
+# On enregistre donc les references presentes dans l'arbre avant l'audit, sinon
+# un simple changement d'auteur en amont bloque le push tous les jours.
+python3 scripts/gen_internal_urls.py > /tmp/qx_mirror_gen.log 2>&1
+python3 scripts/sync.py > /tmp/qx_mirror_sync2.log 2>&1
+if [ $? -ne 0 ]; then
+  echo "ERREUR: sync.py (2e passe) a echoue"
+  tail -5 /tmp/qx_mirror_sync2.log
+  exit 1
+fi
+
 # Audit d'auto-portance : toute référence encore externe doit faire échouer le job.
 python3 scripts/audit.py > /tmp/qx_mirror_audit.log 2>&1
 if [ $? -ne 0 ]; then
