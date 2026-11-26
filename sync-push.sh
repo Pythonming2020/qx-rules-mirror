@@ -37,6 +37,10 @@ if [ $? -ne 0 ]; then
   exit 1
 fi
 
+# Surveillance des scripts du module Spotify : muet si rien n'a bougé, sinon rapport
+# (état dans .watch-state.json, commité avec le miroir).
+python3 scripts/watch_upstream.py || true
+
 git add -A
 if git diff --cached --quiet; then
   exit 0  # aucun changement, silencieux

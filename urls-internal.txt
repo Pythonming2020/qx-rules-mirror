@@ -7,6 +7,7 @@ https://raw.githubusercontent.com/chxm1023/script/main/Rewrite/embycrack.js
 https://raw.githubusercontent.com/chxm1023/script/main/Rewrite/xzjhz.js
 
 # --- other:service.2ti.st (1) ---
+https://service.2ti.st/QuanX/Script/jd_tb_price/main.js
 
 # --- chxm102 (1) ---
 https://raw.githubusercontent.com/chxm102
@@ -248,10 +249,6 @@ https://raw.githubusercontent.com/Maasea/sgmodule/refs/heads/master/Script/Youtu
 https://raw.githubusercontent.com/zZPiglet/Task/master/asset/UnblockURLinWeChat.js
 https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/https.js
 https://raw.githubusercontent.com/QXPublic/MyUtilize/main/Rewrite/Quantumlutx/Reddit_remove_ads.js
-
-# --- devchristian1337 / loon-plugins (6) — SpotifyPremium.conf (source yfamilys.com)
-# Upstream a change d'auteur (app2smile -> devchristian1337) en 11/2026 : 6 nouvelles
-# references de script, sans quoi audit.py bloque le push quotidien.
 https://raw.githubusercontent.com/devchristian1337/loon-plugins/refs/heads/main/Scripts/Spotify/spot-gabo.js
 https://raw.githubusercontent.com/devchristian1337/loon-plugins/refs/heads/main/Scripts/Spotify/spot-NoSearchAd.js
 https://raw.githubusercontent.com/devchristian1337/loon-plugins/refs/heads/main/Scripts/Spotify/spot-NoHomeAd.js

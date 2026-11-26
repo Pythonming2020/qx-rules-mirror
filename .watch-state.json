@@ -1,0 +1,51 @@
+{
+ "mirror/devchristian1337_loon-plugins/spot-NoHomeAd.js": {
+  "first_seen": "2026-11-26",
+  "last_changed": "2026-11-26",
+  "last_warned": null,
+  "sha256": "800adfc18990dff80e8ef7d61369dbdc0ea6d361daa1a1407dd6898e045c7150",
+  "size": 3727
+ },
+ "mirror/devchristian1337_loon-plugins/spot-NoScrollAd.js": {
+  "first_seen": "2026-11-26",
+  "last_changed": "2026-11-26",
+  "last_warned": null,
+  "sha256": "2f1182c83e3b2cf3cb6e4f62b1cddb9d643ab0b0a47f307c22e2161109339299",
+  "size": 3645
+ },
+ "mirror/devchristian1337_loon-plugins/spot-NoSearchAd.js": {
+  "first_seen": "2026-11-26",
+  "last_changed": "2026-11-26",
+  "last_warned": null,
+  "sha256": "8e04c01e1ab86b6602a6a54b1d0ad27cf5b21a4c80f8c70f48ae6bb4489fdee2",
+  "size": 3823
+ },
+ "mirror/devchristian1337_loon-plugins/spot-gabo.js": {
+  "first_seen": "2026-11-26",
+  "last_changed": "2026-11-26",
+  "last_warned": null,
+  "sha256": "cb33a793aaa1d004f4af2116d40e0a7b3f0f2a402fb526e9894ce34f586c5cf9",
+  "size": 487
+ },
+ "mirror/devchristian1337_loon-plugins/spot-proto-eevee.js": {
+  "first_seen": "2026-11-26",
+  "last_changed": "2026-11-26",
+  "last_warned": null,
+  "sha256": "3cec2a2c15a83f8c9718ce7b9dba283e44770400f00ee78e21e1eff661fcf6d4",
+  "size": 97086
+ },
+ "mirror/devchristian1337_loon-plugins/spot-proto-ev3.js": {
+  "first_seen": "2026-11-26",
+  "last_changed": "2026-11-26",
+  "last_warned": null,
+  "sha256": "b4b45da2380b9e79040e0a03fbd0052e7ac38785cdbf227613b25bce904cc5b1",
+  "size": 357974
+ },
+ "mirror/yfamilys_com/SpotifyPremium.conf": {
+  "first_seen": "2026-11-26",
+  "last_changed": "2026-11-26",
+  "last_warned": null,
+  "sha256": "a5aeb7adbb9fe7dfc4da59dfc524b14caef1bca0736b8241c0f0593daebf9507",
+  "size": 2497
+ }
+}
