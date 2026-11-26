@@ -50,4 +50,3 @@ https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/jibjab.js
 https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/luqi.js
 https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/vivavideo.js
 https://raw.githubusercontent.com/ifflagged/Romeo/main/Modules/QuantumultX/ddgksf2013/StartUpAds.conf
-https://raw.githubusercontent.com/Walvez/surge-startup-ads/main/quantumultx/StartUpAds_Local.conf

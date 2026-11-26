@@ -29,12 +29,6 @@ https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/startup.j
 https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/stay.js
 https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/zhihu_openads.js
 
-# --- Walvez (4) ---
-https://raw.githubusercontent.com/Walvez/surge-startup-ads/main/scripts/bilibili-feed-ads.js
-https://raw.githubusercontent.com/Walvez/surge-startup-ads/main/scripts/bilibili-splash-ads.js
-https://raw.githubusercontent.com/Walvez/surge-startup-ads/main/scripts/jpmorgan-startup-ad.js
-https://raw.githubusercontent.com/Walvez/surge-startup-ads/main/scripts/yikaobang-start-page.js
-
 # --- chxm1023 (2) ---
 https://raw.githubusercontent.com/chxm1023/script/main/Rewrite/embycrack.js
 https://raw.githubusercontent.com/chxm1023/script/main/Rewrite/xzjhz.js

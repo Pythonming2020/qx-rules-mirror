@@ -1,18 +1,16 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""Génère les variantes QX sûres de StartUpAds (墨鱼 2.0 + patch Walvez).
+"""Génère la variante QX sûre de StartUpAds (墨鱼 2.0).
 
 Pourquoi : le module amont MITM des domaines bancaires / paiement / WeChat.
 Sur iPhone, un domaine épinglé (cert pinning) casse l'app au lieu de filtrer.
 On retire donc ces domaines (et leurs règles) de la copie servie au téléphone.
 
-Sources mirroitées (réécrites vers notre dépôt par sync.py) :
+Source mirroitée (réécrite vers notre dépôt par sync.py) :
   mirror/ifflagged_Romeo/StartUpAds.conf
-  mirror/Walvez_surge-startup-ads/StartUpAds_Local.conf
 
-Sorties (jamais écrasées par sync.py) :
+Sortie (jamais écrasée par sync.py) :
   _custom/StartUpAds-qx.conf
-  _custom/StartUpAds-Walvez-qx.conf
 """
 import os
 import re
@@ -23,8 +21,6 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SOURCES = [
     ("mirror/ifflagged_Romeo/StartUpAds.conf", "_custom/StartUpAds-qx.conf",
      "墨鱼去开屏 2.0 · 银行/支付/微信域名已剔除"),
-    ("mirror/Walvez_surge-startup-ads/StartUpAds_Local.conf", "_custom/StartUpAds-Walvez-qx.conf",
-     "开屏补丁 Walvez · 银行域名已剔除"),
 ]
 
 # sous-chaînes de domaine à ne PAS MITM (banque, paiement, wechat)
