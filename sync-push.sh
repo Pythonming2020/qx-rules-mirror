@@ -29,6 +29,15 @@ if [ $? -ne 0 ]; then
   exit 1
 fi
 
+# Variantes sûres de StartUpAds : on retire les domaines bancaires / paiement /
+# WeChat de la liste MITM (cert pinning = app cassée, pas filtrage).
+python3 scripts/build_startupads_custom.py > /tmp/qx_mirror_startup.log 2>&1
+if [ $? -ne 0 ]; then
+  echo "ERREUR: build_startupads_custom.py a echoue"
+  tail -5 /tmp/qx_mirror_startup.log
+  exit 1
+fi
+
 # Audit d'auto-portance : toute référence encore externe doit faire échouer le job.
 python3 scripts/audit.py > /tmp/qx_mirror_audit.log 2>&1
 if [ $? -ne 0 ]; then
