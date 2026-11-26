@@ -1,7 +1,7 @@
 /*************************************
 
 项目名称：Revenuecat系列解锁合集
-更新日期：2026-11-13
+更新日期：2026-11-23
 脚本作者：@ddm1023
 电报频道：https://t.me/ddm1023
 使用声明：⚠️仅供参考，🈲转载与售卖！
@@ -30,6 +30,7 @@ if (forbiddenApps.some(app => (ua && ua.includes(app)) || ($request.body && $req
 }
 
 const bundle = {
+  'com.ukgroup.translator': { name: 'Pro', id: 'lifetime_translator', cm: 'sjc' },  //Translator: 实时翻译器-语音和文本
   'com.suxuanlv.startsleepapp': { name: 'vip', id: 'kaishui_vip_lifetime', cm: 'sjb' },  //开睡:白噪音助眠与睡眠记录
   'me.xgmm.meallog': { id: '202602071529', cm: 'sjc' },  //记一餐-干饭人AI饮食营养师
   'me.xgmm.note': { name: 'one month', id: '20250203', cm: 'sjc' },  //NoteMark-全能日常生活记录
@@ -68,6 +69,8 @@ const bundle = {
 };
 
 const listua = {
+  'Remote+': { name: 'Pro', id: 'com.cherpake.macrc.all', cm: 'sjc' },  //Remote+电视与流媒体遥控器
+  'TouchRetouchBasic': { name: 'premium', id: 'tr5_yearlysubsc_15dlrs_2', cm: 'sja' },  //TouchRetouch:轻松扣图,剪下或移除
   'billmate': { name: 'Bill Mate Pro', id: 'com.billmate.plus.yearly', cm: 'sja' },  //BillMate智能算账
   'col.or': { name: 'Color Plus', id: 'com.color.plus', cm: 'sjb' },  //col.or-AR颜色名称查找器
   'knowme-storage': { name: 'pro', id: 'pro', cm: 'sjb' },  //知我记物-更懂你的记物软件
@@ -430,7 +433,6 @@ const listua = {
   'PrivateBrowser': { name: 'pro', id: 'private_pro_lifetime', cm: 'sjb' },  //Brovacy-隐私浏览器
   'Photo%20Cleaner': { name: 'premium', id: 'com.monocraft.photocleaner.lifetime.3', cm: 'sjb' },  //照片清理Photo Cleaner
   'bluredit': { name: 'Premium', id: 'net.kaleidoscope.bluredit.premium1', cm: 'sja' },  //bluredit-模糊视频&照片
-  'TouchRetouchBasic': { name: 'premium', id: 'tr5_yearlysubsc_15dlrs_2', cm: 'sja' },  //TouchRetouch-水印清理
   'TimeFinder': { name: 'pro', id: 'com.lukememet.TimeFinder.Premium', cm: 'sjb' },  //TimeFinder-提醒App
   'Alpenglow': { name: 'newPro', id: 'ProLifetime', cm: 'sjc' },  //Alpenglow-日出日落
   'Decision': { name: 'com.nixwang.decision.entitlements.pro', id: 'com.nixwang.decision.pro.annual', cm: 'sja' },  //小决定-选择困难症克星
