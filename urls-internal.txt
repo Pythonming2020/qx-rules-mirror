@@ -2,12 +2,51 @@
 # (généré par scripts/gen_internal_urls.py — union avec la version précédente)
 # sync.py les télécharge puis réécrit la référence interne vers ce dépôt.
 
+# --- ddgksf2013 (25) ---
+https://raw.githubusercontent.com/ddgksf2013/Scripts/master/abchina.js
+https://raw.githubusercontent.com/ddgksf2013/Scripts/master/baishitv.js
+https://raw.githubusercontent.com/ddgksf2013/Scripts/master/pinganads.js
+https://raw.githubusercontent.com/ddgksf2013/Scripts/master/pupumarket.js
+https://raw.githubusercontent.com/ddgksf2013/Scripts/master/quark.js
+https://raw.githubusercontent.com/ddgksf2013/Scripts/master/weixin110.js
+https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/12306.js
+https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/123pan.js
+https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/555Ad.js
+https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/ahfs.js
+https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/amdc.js
+https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/caixinads.js
+https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/coolapk.js
+https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/dict.js
+https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/fly.js
+https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/hanglvzongheng.js
+https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/iqiyi_open_ads.js
+https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/ithome.js
+https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/jd_json.js
+https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/qidian.js
+https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/shunfeng_json.js
+https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/smzdm_json.js
+https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/startup.js
+https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/stay.js
+https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/zhihu_openads.js
+
+# --- Walvez (4) ---
+https://raw.githubusercontent.com/Walvez/surge-startup-ads/main/scripts/bilibili-feed-ads.js
+https://raw.githubusercontent.com/Walvez/surge-startup-ads/main/scripts/bilibili-splash-ads.js
+https://raw.githubusercontent.com/Walvez/surge-startup-ads/main/scripts/jpmorgan-startup-ad.js
+https://raw.githubusercontent.com/Walvez/surge-startup-ads/main/scripts/yikaobang-start-page.js
+
 # --- chxm1023 (2) ---
 https://raw.githubusercontent.com/chxm1023/script/main/Rewrite/embycrack.js
 https://raw.githubusercontent.com/chxm1023/script/main/Rewrite/xzjhz.js
 
 # --- other:service.2ti.st (1) ---
 https://service.2ti.st/QuanX/Script/jd_tb_price/main.js
+
+# --- app2smile (1) ---
+https://raw.githubusercontent.com/app2smile/rules/master/js/baidumap.js
+
+# --- NobyDa (1) ---
+https://raw.githubusercontent.com/NobyDa/Script/master/Bahamut/BahamutAnimeAds.js
 
 # --- chxm102 (1) ---
 https://raw.githubusercontent.com/chxm102
