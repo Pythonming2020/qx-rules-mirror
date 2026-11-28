@@ -2,7 +2,34 @@
 # (généré par scripts/gen_internal_urls.py — union avec la version précédente)
 # sync.py les télécharge puis réécrit la référence interne vers ce dépôt.
 
-# --- ddgksf2013 (25) ---
+# --- chxm1023 (2) ---
+https://raw.githubusercontent.com/chxm1023/script/main/Rewrite/embycrack.js
+https://raw.githubusercontent.com/chxm1023/script/main/Rewrite/xzjhz.js
+
+# --- other:service.2ti.st (1) ---
+https://service.2ti.st/QuanX/Script/jd_tb_price/main.js
+
+# --- other:gist.githubusercontent.com (1) ---
+https://gist.githubusercontent.com/blackmatrix7/f5f780d0f56b319b6ad9848fd080bb18/raw/zheye.min.js
+
+# --- NobyDa (1) ---
+https://raw.githubusercontent.com/NobyDa/Script/master/Surge/Module/BahamutAnimeAds.sgmodule
+
+# --- chxm102 (1) ---
+https://raw.githubusercontent.com/chxm102
+
+https://github.com/ddgksf2013/Scripts/raw/master/12306.js
+https://github.com/ddgksf2013/Scripts/raw/master/555Ad.js
+https://github.com/ddgksf2013/Scripts/raw/master/ahfs.js
+https://github.com/ddgksf2013/Scripts/raw/master/caixinads.js
+https://github.com/ddgksf2013/Scripts/raw/master/coolapk.js
+https://github.com/ddgksf2013/Scripts/raw/master/iqiyi_open_ads.js
+https://github.com/ddgksf2013/Scripts/raw/master/jd_json.js
+https://github.com/ddgksf2013/Scripts/raw/master/shunfeng_json.js
+https://github.com/ddgksf2013/Scripts/raw/master/stay.js
+https://github.com/ddgksf2013/Scripts/raw/master/weixin110.js
+https://github.com/ddgksf2013/Scripts/raw/master/zhihu_openads.js
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/zheye/zheye.snippet
 https://raw.githubusercontent.com/ddgksf2013/Scripts/master/abchina.js
 https://raw.githubusercontent.com/ddgksf2013/Scripts/master/baishitv.js
 https://raw.githubusercontent.com/ddgksf2013/Scripts/master/pinganads.js
@@ -28,23 +55,8 @@ https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/smzdm_jso
 https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/startup.js
 https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/stay.js
 https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/zhihu_openads.js
-
-# --- chxm1023 (2) ---
-https://raw.githubusercontent.com/chxm1023/script/main/Rewrite/embycrack.js
-https://raw.githubusercontent.com/chxm1023/script/main/Rewrite/xzjhz.js
-
-# --- other:service.2ti.st (1) ---
-https://service.2ti.st/QuanX/Script/jd_tb_price/main.js
-
-# --- app2smile (1) ---
 https://raw.githubusercontent.com/app2smile/rules/master/js/baidumap.js
-
-# --- NobyDa (1) ---
 https://raw.githubusercontent.com/NobyDa/Script/master/Bahamut/BahamutAnimeAds.js
-
-# --- chxm102 (1) ---
-https://raw.githubusercontent.com/chxm102
-
 https://raw.githubusercontent.com/chxm1023/Rewrite/main/13geapp.js
 https://raw.githubusercontent.com/chxm1023/Rewrite/main/360xj.js
 https://raw.githubusercontent.com/chxm1023/Rewrite/main/40sishi.js

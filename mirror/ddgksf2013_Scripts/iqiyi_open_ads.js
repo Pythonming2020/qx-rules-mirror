@@ -19,7 +19,7 @@ host-suffix, cupid.iqiyi.com, direct
 [rewrite_local]
 
 # ～ 爱奇艺（2023-03-17）@ddgksf2013
-^https?:\/\/.*cupid\.iqiyi\.com\/mixer\? url script-response-body https://github.com/ddgksf2013/Scripts/raw/master/iqiyi_open_ads.js
+^https?:\/\/.*cupid\.iqiyi\.com\/mixer\? url script-response-body https://raw.githubusercontent.com/Pythonming2020/qx-rules-mirror/main/mirror/ddgksf2013_Scripts/iqiyi_open_ads.js
 
 [mitm]
 

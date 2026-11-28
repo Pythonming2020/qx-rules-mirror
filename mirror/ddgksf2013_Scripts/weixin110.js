@@ -5,7 +5,7 @@
 
 hostname = weixin110.qq.com, security.wechat.com,
 
-^https\:\/\/(weixin110\.qq|security.wechat)\.com\/cgi-bin\/mmspamsupport-bin\/newredirectconfirmcgi\? url script-response-body https://github.com/ddgksf2013/Scripts/raw/master/weixin110.js
+^https\:\/\/(weixin110\.qq|security.wechat)\.com\/cgi-bin\/mmspamsupport-bin\/newredirectconfirmcgi\? url script-response-body https://raw.githubusercontent.com/Pythonming2020/qx-rules-mirror/main/mirror/ddgksf2013_Scripts/weixin110.js
 
 */
 

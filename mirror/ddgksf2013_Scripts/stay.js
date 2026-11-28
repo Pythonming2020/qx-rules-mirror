@@ -13,7 +13,7 @@
 [rewrite_local]
 
 # ～ Stay（2022-10-17）@ddgksf2013
-^https?:\/\/api\.shenyin\.name\/stay-fork\/browse\/featured$ url script-response-body https://github.com/ddgksf2013/Scripts/raw/master/stay.js
+^https?:\/\/api\.shenyin\.name\/stay-fork\/browse\/featured$ url script-response-body https://raw.githubusercontent.com/Pythonming2020/qx-rules-mirror/main/mirror/ddgksf2013_Scripts/stay.js
 
 [mitm]
 
